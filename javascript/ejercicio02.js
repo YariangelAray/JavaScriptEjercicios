@@ -1,7 +1,7 @@
 // Definimos una contraseña
 const contraseña = "yari0421";
 // Pedir la contraseña
-let contraseñaIgresada = prompt("Ingrese su contraseña: ").toLocaleLowerCase();
+let contraseñaIgresada = prompt("Ingrese su contraseña: ").toLowerCase();
 // Expresión regular
 let regex = /^(\w)+$/;
 
