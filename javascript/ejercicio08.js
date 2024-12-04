@@ -11,14 +11,14 @@ const determinarNivel = puntos => {
     else return "Meritorio";
 }
 
-// Válidamos que los datos ingresados sean correctos
+// Validámos que los datos ingresados sean correctos
 while (true) {
     puntos = prompt("Ingrese sus puntos:");
     if (regexPuntos.test(puntos) || parseInt(puntos) > 1) break;
     else alert("ERROR: Ingrese una puntuación válida. (0.0 - 0.4 - 0.6 o más)");
 }
 
-// MOstramos el resultado
+// Mostramos el resultado
 
 alert(`Su nivel de rendimiento es: ${determinarNivel(puntos)}
 Su pago es es de: ${bonificacion*puntos}`);
