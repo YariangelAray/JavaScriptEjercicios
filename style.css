@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body{
+    background-color: #dcc8dc;
+}
+h1{
+    color: indigo;
+    font-weight: 800;
+    margin-top: 45px;
+    margin-left: 120px;
+    font-size: 40px;
+}
+p{
+    width: 1000px;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+span{
+    display: block;
+    margin-top: 15px;
+    margin-left: 30px;
+    color: indigo;
+    font-size: 1.4rem;
+}
+.titulo{
+    margin: 0;
+    margin-top: 60px;
+    text-align: center;
+}
+h2{
+    color: purple;
+    text-align: center;
+    font-size: 30px;
+}
+
+.links{
+    display: grid;
+    margin: 30px 70px;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 110px));
+    justify-content: center;
+    justify-items: center;
+    gap: 15px;
+}
+
+.link{
+    display: flex;
+    text-decoration: none;
+    background-color:rebeccapurple;
+    color:thistle;
+    font-weight: 800;
+    width: 110px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    transition: 0.4s;
+}
+.link:hover{
+    background-color: thistle;
+    color: rebeccapurple;
+    box-shadow: 0 0 8px 1px rebeccapurple;
+}
+
+.link--casita{
+    width: max-content;
+    height: max-content;
+    font-size: 2.5rem;
+    padding: 10px;
+    position: absolute;
+    left: 20px;
+    top: 40px;
+}
