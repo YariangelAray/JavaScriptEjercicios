@@ -23,9 +23,7 @@ for (let i = 1; i <= cantNum; i++) {
 
 // función que retorna la media
 
-const media = (suma, total) =>{
-    return suma / total;
-}
+const media = (suma, total) => suma / total;
 
 // Se muestra el mensaje
 alert("El promedio de los números es: " + media(suma, cantNum));
