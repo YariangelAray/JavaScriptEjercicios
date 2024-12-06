@@ -14,17 +14,17 @@ let b = pedir("b");
 let c = pedir("c");
 
 // Definimos a una función para sacar el discriminante
-let sacarDiscriminante = (a, b, c) => b**2 - 4 * a * c;
+const sacarDiscriminante = (a, b, c) => b**2 - 4 * a * c;
 
 // Definimos una función para obtener las raices reales
-let raicesReales = (a, b, discriminante) => {    
+const raicesReales = (a, b, discriminante) => {    
     let x1 = (-b+Math.sqrt(discriminante))/(2*a);
     let x2 = (-b-Math.sqrt(discriminante))/(2*a);
     return [x1, x2];
 }
 
 // Definimos una función que nos retornará los resultados dependiendo de la evaluación del discriminante
-let segundoGrado = (a, b, c) => {
+const segundoGrado = (a, b, c) => {
     
     let discriminante = sacarDiscriminante(a, b, c);
 
