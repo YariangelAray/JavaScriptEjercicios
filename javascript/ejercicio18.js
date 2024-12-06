@@ -8,7 +8,7 @@ const pedir = (letra) => {
     }
 };
 
-// Llamamos a la función para que fuar
+// Llamamos a la función para que pida las letras
 let a = pedir("a");
 let b = pedir("b");
 let c = pedir("c");

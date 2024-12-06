@@ -1,1 +1,46 @@
-// Para obtener las raíces reales de una ecuación de segundo grado, como \(ax^{2}+bx+c=0\), se puede utilizar la fórmula \(x=(-b\pm \surd (b^{2}-4ac))/2a\).     .f5cPye .WaaZC:first-of-type .rPeykc.uP58nb:first-child{font-size:18px;line-height:24px;font-weight:400 !important;letter-spacing:normal;margin:0 0 10px 0}.rPeykc.uP58nb{font-size:18px;font-weight:500;letter-spacing:0;line-height:26px;margin:20px 0 10px 0}.rPeykc.uP58nb.MNX06c{font-size:18px;font-weight:normal;letter-spacing:normal;line-height:24px;margin:10px 0 10px 0}.f5cPye ul{font-size:16px;line-height:22px;margin:10px 0 20px 0;padding-left:24px}.f5cPye .WaaZC:first-of-type ul:first-child{margin-top:0}.f5cPye ul.qh1nvc{font-size:16px;line-height:22px}.f5cPye li{padding-left:4px;margin-bottom:8px;list-style:inherit}.f5cPye li.K3KsMc{list-style-type:none}.f5cPye ul>li:last-child,.f5cPye ol>li:last-child,.f5cPye ul>.bsmXxe:last-child>li,.f5cPye ol>.bsmXxe:last-child>li{margin-bottom:0}       En esta fórmula, \(D=b^{2}-4ac\) es el discriminante. El valor del discriminante indica si la ecuación tiene raíces reales y distintas, una solución real repetida o ninguna solución real:     Si \(D>0\), la ecuación tiene dos raíces reales y distintas.  Si \(D=0\), la ecuación tiene una solución real repetida.  Si \(D<0\), la ecuación no tiene soluciones reales. 
+// Función para pedir las variables
+const pedir = (letra) => {
+    let regex = /^[0-9-]+$/;
+    while (true) {
+        let num = parseInt(prompt(`Para la ecuación de segundo grado. \nIngrese el valor de "${letra}": `));
+        if (!regex.test(num)) alert("ERROR: Ingrese solo números.");
+        else return num;
+    }
+};
+
+// Llamamos a la función para que pida las variables
+let a = pedir("a");
+let b = pedir("b");
+let c = pedir("c");
+
+// Definimos a una función para sacar el discriminante
+let sacarDiscriminante = (a, b, c) => b**2 - 4 * a * c;
+
+// Definimos una función para obtener las raices reales
+let raicesReales = (a, b, discriminante) => {    
+    let x1 = (-b+Math.sqrt(discriminante))/(2*a);
+    let x2 = (-b-Math.sqrt(discriminante))/(2*a);
+    return [x1, x2];
+}
+
+// Definimos una función que nos retornará los resultados dependiendo de la evaluación del discriminante
+let segundoGrado = (a, b, c) => {
+    
+    let discriminante = sacarDiscriminante(a, b, c);
+
+    if (discriminante > 0) {
+        let [x1, x2] = raicesReales(a, b, discriminante);
+        return `La ecuación tiene dos raíces reales y distintas. \n x1 = ${x1} | x2 = ${x2}`;
+    }
+    else if (discriminante == 0) {
+        let [x] = raicesReales(a, b, discriminante);
+        return `La ecuación tiene una solución real repetida.\n x = ${x}` ;
+    }
+    else{
+        return "La ecuación no tiene soluciones reales.";
+    }
+
+}
+
+// Mostramos el mensaje que retorna la función
+alert(segundoGrado(a, b, c));
