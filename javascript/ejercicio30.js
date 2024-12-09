@@ -20,7 +20,7 @@ let regexDigit = /\d/;
 if (!regexDigit.test(contraseña)) errores.push(`- La contraseña debe tener al menos un dígito.`);
 
 //Validación de toda la contraseña completa
-let regexContra = /^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])([^\s]){8,16}$/;
+let regexContra = /^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])([^\s]){8,12}$/;
 if (!regexContra.test(contraseña)) errores.push(`- La contraseña no es segura.`);
 
 //Mostrar si la contraseña es segura o no, si no, se muestran los errores.
