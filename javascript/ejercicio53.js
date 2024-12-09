@@ -1,4 +1,4 @@
-// Función para comentar todo
+// Función para pedir los precios
 const pedir = (producto) => {
     let regex = /^[0-9-]+(\.[0-9])*$/;
     while (true) {
