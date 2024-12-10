@@ -4,8 +4,9 @@
 
 // función para convertir númeos a binario.
 const convertirBinario = num =>{
-    // array para guardar los decimales
+    // array para guardar los residuos
     let residuos = [];
+    //El número se va a dividir mienntras que sea mayor que 0
     while (num > 0) {
         let residuo = num%2; //sacamos el residuo del numero entre 2
         residuos.push(residuo); //Agregamos el residuo al array
