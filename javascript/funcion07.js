@@ -8,11 +8,12 @@ const pedir = () => {
     }
 };
 
-// función para invertir la palabra y
+// función para invertir la palabra
 const invertir = palabra => palabra.split("").reverse().join(""); //El metodo split convierte la palabra en un arreglo, el metodo reverse invierte ese arreglo. El metodo join uno los elementos de ese arreglo.
 
 // pedimos la palabra
 let palabra = pedir();
+
 // llamamos a la función
 let palabraInversa = invertir(palabra)
 
