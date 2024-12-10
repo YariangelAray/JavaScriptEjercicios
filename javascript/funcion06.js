@@ -14,7 +14,7 @@ const calcMayor = (...numeros) => Math.max(...numeros);
 let cantNumeros = pedir("de números de los cuales desea calcular el mayor");
 let numeros = []; // array donde se guardan los números
 
-// fot que pregunta los números y los agrega al array
+// for que pregunta los números y los agrega al array
 for (let i = 1; i <= cantNumeros; i++) {
     numeros.push(pedir(`${i}`));
 }
