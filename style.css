@@ -8,44 +8,44 @@
 }
 
 body{
-    background-image: linear-gradient( #dcc8dc 90%, mediumpurple);
+    background-color: #1e1c1d;
     padding-bottom: 80px;
 }
 h1{
-    color: indigo;
+    color: whitesmoke;
     font-weight: 800;
     margin: 100px auto 0;
     font-size: 55px;
     text-align: center;
+    box-shadow: 0 0 10px 1px #101010;
 }
 h2{
-    color: purple;
+    color: #9b2ab1;
+    filter: drop-shadow(0 0 15px #000);
     text-align: center;
-    font-size: 38px;
+    font-size: 40px;
+    font-weight: 800;
 }
 .titulo{
-    margin-top: 60px;
+    margin-top: 80px;
+    margin-bottom: 40px;
     font-size: 45px;
     font-weight: 1000;
 }
-hr{
-    border: 2px solid indigo;
-    border-radius: 10px;
-    margin: 20px 6vw;
-    box-shadow: 0 0 5px 1px mediumpurple;
-}
+
 p{
-    margin: 20px auto 0;
+    margin: 50px auto 0;
     width: 70vw;
     font-weight: 600;
     font-size: 1.6rem;
+    color: whitesmoke;
 }
 span{
-    display: block;
-    margin-top: 15px;
-    margin-left: 30px;
-    color: indigo;
-    font-size: 1.4rem;
+    display: flex;
+    margin: 25px 0;
+    justify-content: center;
+    color: #9b2ab1;
+    font-size: 1.5rem;
 }
 
 
@@ -61,22 +61,22 @@ span{
 .link{
     display: flex;
     text-decoration: none;
-    background-color:rebeccapurple;
-    color:thistle;
-    font-weight: 800;
+    background-color:#101010;
+    color: #9b2ab1;
+    font-weight: 1000;
     width: 180px;
     height: 80px;
     align-items: center;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     border-radius: 50px;
     transition: 0.4s;
+    box-shadow: 0 0 20px 1px #101010;
 }
 
 .link:hover{
-    background-color: thistle;
-    color: rebeccapurple;
-    box-shadow: 0 0 8px 1px rebeccapurple;
+    background-color: #9b2ab1;
+    color: whitesmoke;
     font-size: 1.6rem;
 }
 
@@ -89,7 +89,7 @@ span{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 200px;
+    bottom: 100px;
 }
 .link--casita:hover{
     font-size: 3.6rem;
