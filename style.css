@@ -8,21 +8,37 @@
 }
 
 body{
-    background-color: #dcc8dc;
+    background-image: linear-gradient( #dcc8dc 90%, mediumpurple);
+    padding-bottom: 80px;
 }
 h1{
     color: indigo;
     font-weight: 800;
-    margin-top: 45px;
-    margin-left: 120px;
-    font-size: 40px;
+    margin: 100px auto 0;
+    font-size: 55px;
+    text-align: center;
+}
+h2{
+    color: purple;
+    text-align: center;
+    font-size: 38px;
+}
+.titulo{
+    margin-top: 60px;
+    font-size: 45px;
+    font-weight: 1000;
+}
+hr{
+    border: 2px solid indigo;
+    border-radius: 10px;
+    margin: 20px 6vw;
+    box-shadow: 0 0 5px 1px mediumpurple;
 }
 p{
-    width: 1000px;
-    margin-left: 20px;
-    margin-top: 15px;
+    margin: 20px auto 0;
+    width: 70vw;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 span{
     display: block;
@@ -31,24 +47,15 @@ span{
     color: indigo;
     font-size: 1.4rem;
 }
-.titulo{
-    margin: 0;
-    margin-top: 60px;
-    text-align: center;
-}
-h2{
-    color: purple;
-    text-align: center;
-    font-size: 30px;
-}
+
 
 .links{
     display: grid;
-    margin: 30px 70px;
-    grid-template-columns: repeat(auto-fill, minmax(110px, 110px));
+    margin: 50px 70px 30px;
+    grid-template-columns: repeat(5, 1fr);
     justify-content: center;
     justify-items: center;
-    gap: 15px;
+    row-gap: 20px;
 }
 
 .link{
@@ -57,25 +64,33 @@ h2{
     background-color:rebeccapurple;
     color:thistle;
     font-weight: 800;
-    width: 110px;
-    height: 60px;
+    width: 180px;
+    height: 80px;
     align-items: center;
     justify-content: center;
+    font-size: 1.4rem;
     border-radius: 50px;
     transition: 0.4s;
 }
+
 .link:hover{
     background-color: thistle;
     color: rebeccapurple;
     box-shadow: 0 0 8px 1px rebeccapurple;
+    font-size: 1.6rem;
 }
 
 .link--casita{
-    width: max-content;
-    height: max-content;
-    font-size: 2.5rem;
+    width: 90px;
+    min-width: 90px;
+    height: 90px;
+    font-size: 3rem;
     padding: 10px;
     position: absolute;
-    left: 20px;
-    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 200px;
+}
+.link--casita:hover{
+    font-size: 3.6rem;
 }
